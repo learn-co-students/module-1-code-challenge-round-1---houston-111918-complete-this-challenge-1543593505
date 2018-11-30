@@ -62,6 +62,7 @@ class Restaurant
     rev = r.content
   end
   end
+end
   
 
 end
