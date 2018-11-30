@@ -50,19 +50,18 @@ class Restaurant
 
   end
 
-  def longest_review
+  # def longest_review
   #returns the longest review content for a given restaurant
-  rev = nil
-  longest = 0
-  ratings = Review.all.select do |review|
-    review.restaurant == self
-  end
-  ratings.map do |r|
-    if r.content.length > longest
-    rev = r.content
-  end
-  end
-end
+#   rev = nil
+#   longest = 0
+#   ratings = Review.all.select do |review|
+#     review.restaurant == self
+#   end
+#   ratings.map do |r|
+#     longest = r.content.length
+#   end
+# end
+# end
   
 
 end
