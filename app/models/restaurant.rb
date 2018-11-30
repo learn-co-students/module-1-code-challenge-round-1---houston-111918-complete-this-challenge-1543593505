@@ -19,8 +19,26 @@ class Restaurant
     end
   end
 
+  def reviews
+    Review.all.select do |review|
+      review.restaurant == self
+    end
+  end
 
+  def customers
+    reviews.map do |review|
+      review.customer
+    end
+  end 
 
+  #def total_reviews
+    #count = 0
+    #reviews.each do |review|
+      #if review.customer == self 
+        #count += 1
+      #end
+   # end
+    #count
+  #end
 
-
-end
+#end
