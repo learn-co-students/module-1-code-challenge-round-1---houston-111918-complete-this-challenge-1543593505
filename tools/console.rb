@@ -36,4 +36,4 @@ review_9 = Review.new(leo, ihop, 0,
 
 
 binding.pry
-0 #leave this here to ensure binding.pry isn't the last line
+0 #left this here to ensure binding.pry isn't the last line

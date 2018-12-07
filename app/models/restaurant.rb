@@ -12,7 +12,7 @@ class Restaurant
   end
 
   def reviews
-    Review.all.select{|review| review.restaurant == self}
+    Review.all.select{|review| review.restaurant == self}.uniq
   end
 
   def customers
